@@ -20,7 +20,7 @@ phases:
      - echo pushing in to docker ECR...
      - docker push 766461277699.dkr.ecr.us-east-1.amazonaws.com/yt-video-image:latest
      - echo Writing image definition file..
-     - printf '[{"name":"%s","imageUri":"%s"}]' "yt-video-cluster" "766461277699.dkr.ecr.us-east-1.amazonaws.com/yt-video-image" > imagedefinitions.json
+     - printf '[{"name":"%s","imageUri":"%s"}]' "yt-video-service" "766461277699.dkr.ecr.us-east-1.amazonaws.com/yt-video-image" > imagedefinitions.json
 
 
 artifacts:
